@@ -1,0 +1,39 @@
+service: nest-serverless-image
+
+frameworkVersion: "4"
+
+plugins:
+  - serverless-offline
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  stage: dev
+  region: us-east-1
+
+functions:
+  app:
+    handler: dist/lambda.handler
+    events:
+      - http:
+          path: api/list
+          method: get
+      - http:
+          path: ""
+          method: get
+          cors: true
+
+  upload:
+    handler: dist/lambda.handler 
+    events:
+      - http:
+          path: upload
+          method: post
+
+custom:
+  serverless-offline:
+    httpPort: 3000
+
+package:
+  patterns:
+    - '!node_modules/aws-sdk/**'  

@@ -1,0 +1,49 @@
+Server running on port 3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1907:16)
+    at listenInCluster (node:net:1964:12)
+    at Server.listen (node:net:2066:7)
+    at Function.listen (/Users/kritish/nest-serverless-image/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/kritish/nest-serverless-image/src/expressApp.ts:27:12)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Module.m._compile (/usr/local/lib/node_modules/ts-node/src/index.ts:1618:23)
+    at node:internal/modules/cjs/loader:1689:10
+    at Object.require.extensions.<computed> [as .ts] (/usr/local/lib/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1318:32) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+Server running on port 3000
+Server running on port 3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1907:16)
+    at listenInCluster (node:net:1964:12)
+    at Server.listen (node:net:2066:7)
+    at Function.listen (/Users/kritish/nest-serverless-image/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/kritish/nest-serverless-image/src/expressApp.ts:31:12)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Module.m._compile (/usr/local/lib/node_modules/ts-node/src/index.ts:1618:23)
+    at node:internal/modules/cjs/loader:1689:10
+    at Object.require.extensions.<computed> [as .ts] (/usr/local/lib/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1318:32) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+Server running on port 3000
+Server running on port 3000
+Uploaded file: {
+  fieldname: 'file',
+  originalname: 'peakpx.jpg',
+  encoding: '7bit',
+  mimetype: 'image/jpeg',
+  destination: 'uploads/',
+  filename: '6d5d2268acec739433073b1985ae224f',
+  path: 'uploads/6d5d2268acec739433073b1985ae224f',
+  size: 12207
+}
